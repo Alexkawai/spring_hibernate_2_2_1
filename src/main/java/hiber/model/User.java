@@ -21,7 +21,7 @@ public class User {
 
 
 
-   @OneToOne(cascade = CascadeType.ALL)
+   @OneToOne()
    @JoinColumn(name = "car_id", referencedColumnName = "id")
    private Car car;
 
